@@ -608,9 +608,9 @@
 
     <!--#region footer-->
     <footer class="footer">
-        <div class="container-footer">
+        <div class="container footer-container">
             <div class="footer-logo-text">
-                <a class="logo-footer" href="./index.html">Web<span class="logo-text-span-footer">Studio</span></a>
+                <a class="logo footer-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing
                     &
                     growth solutions.</p>
@@ -618,7 +618,7 @@
 
             <div class="footer-icon">
                 <p class="footer-icon-text">Social media</p>
-                <ul class="footer-icon-item footer-media-list">
+                <ul class="footer-icon-item">
                     <li class="footer-icon-list">
                         <a href="" class="footer-link">
                             <svg width="24" height="24" class="footer-ic-img">
@@ -676,10 +676,10 @@
     <!--#endregionfooter-->
 
     <!--#region backdrop-->
-    <div class="backdrop is-open hidden">
+    <div class="backdrop" data-modal>
 
         <div class="modal">
-            <button class="close-btn" type="button">
+            <button class="close-btn" type="button" data-modal-close>
                 <svg class="close-btn-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-btn-close"></use>
                 </svg>
@@ -693,7 +693,7 @@
                 <div class="modal-container-block">
                     <label class="modal-form-label" for="user-name">Name</label>
                     <div class="modal-form-input-cont">
-                        <input class="modal-form-input" id="user-name" name="user-name" type="text" />
+                        <input class="modal-form-input" id="user-name" name="user-name" type="text" required />
                         <svg width="18" height="24" class="modal-form-icon">
                             <use href="./images/icons.svg#icon-user"></use>
                         </svg>
@@ -702,7 +702,7 @@
                 <div class="modal-container-block">
                     <label class="modal-form-label" for="user-name">Phone</label>
                     <div class="modal-form-input-cont">
-                        <input class="modal-form-input" id="user-phone" name="user-name" type="text" />
+                        <input class="modal-form-input" id="user-phone" name="user-name" type="text" required />
                         <svg width="18" height="24" class="modal-form-icon">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
@@ -711,7 +711,7 @@
                 <div class="modal-container-block">
                     <label class="modal-form-label" for="user-name">Email</label>
                     <div class="modal-form-input-cont">
-                        <input class="modal-form-input" id="user-email" name="user-name" type="text" />
+                        <input class="modal-form-input" id="user-email" name="user-name" type="text" required />
                         <svg width="18" height="24" class="modal-form-icon">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
@@ -728,7 +728,7 @@
                     <input type="checkbox" class="checkbox visually-hidden" id="user-privacy" name="user-privacy"
                         value="true" />
                     <label class="label-checkbox" for="user-privacy"><span class="custom-checkbox">
-                            <svg width="10" height="8">
+                            <svg class="svg-checkbox" width="10" height="8">
                                 <use href="./images/icons.svg#icon-cheked"></use>
                             </svg>
                         </span> I accept the terms and conditions of the <a class="modal-policy-link" href="">Privacy
